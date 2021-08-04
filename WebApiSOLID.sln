@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{69644170-DE2F-4651-860C-841755FE6657}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "portal", "portal", "{6CFB62AA-3211-4774-8BBB-C8F7B1F38F12}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

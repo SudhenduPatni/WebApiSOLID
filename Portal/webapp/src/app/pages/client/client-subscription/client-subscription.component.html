@@ -1,0 +1,33 @@
+<form>
+    <div>
+        <span for="lbSubscribed">Subscribed: </span>
+        <input type="checkbox" />
+    </div>
+    <div>
+        <span>From date: </span>
+        <div class="input-group">
+            <input class="form-control" placeholder="yyyy-mm-dd" name="fromdate" [(ngModel)]="fromModel" ngbDatepicker
+                #fromDate="ngbDatepicker">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary calendar" (click)="fromDate.toggle()" type="button"></button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <span>To date: </span>
+        <div class="input-group">
+            <input class="form-control" placeholder="yyyy-mm-dd" name="todate" [(ngModel)]="toModel" ngbDatepicker
+                #toDate="ngbDatepicker">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary calendar" (click)="toDate.toggle()" type="button"></button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <label for="txtCharges">Charges:</label>
+        <input type="number" class="form-control" id="txtCharges" placeholder="Charges" name="txtCharges" required>
+    </div>
+    <div>
+        <button (click)="saveSubscription()">Save</button>
+    </div>
+</form>

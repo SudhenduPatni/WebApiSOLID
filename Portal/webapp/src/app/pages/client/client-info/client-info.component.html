@@ -1,0 +1,19 @@
+<div class="form-group">
+    <label for="dateOfBirth">Client name</label>
+    <div class="input-group">
+        <input [(ngModel)]="clientName" class="form-control" placeholder="Client name">
+    </div>
+</div>
+<div class="btn-group mr-3">
+    <button type="button" class="btn btn-primary">{{cloudProvider}}</button>
+    <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
+        <span class="btn btn-primary dropdown-toggle-split" ngbDropdownToggle></span>
+        <div class="dropdown-menu" ngbDropdownMenu>
+            <span (click)="cloudProviderChange(cloudProviderEnum.Azure)" ngbDropdownItem>Azure</span>
+            <span (click)="cloudProviderChange(cloudProviderEnum.Dropbox)" ngbDropdownItem>Dropbox</span>
+        </div>
+    </div>
+</div>
+<div style="padding: 20px 0px;">
+    <button type="button" class="btn btn-outline-dark" (click)="addClient()">Save</button>
+</div>

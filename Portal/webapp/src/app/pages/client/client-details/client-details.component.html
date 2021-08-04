@@ -1,0 +1,22 @@
+<nav ngbNav #nav="ngbNav" class="nav-tabs">
+  <ng-container ngbNavItem>
+    <a ngbNavLink>Client Info</a>
+    <ng-template ngbNavContent>
+      <app-client-info></app-client-info>
+    </ng-template>
+  </ng-container>
+  <ng-container ngbNavItem>
+    <a ngbNavLink>Subscription</a>
+    <ng-template ngbNavContent>
+      <app-client-subscription></app-client-subscription>
+    </ng-template>
+  </ng-container>
+  <ng-container ngbNavItem>
+    <a ngbNavLink>Files</a>
+    <ng-template ngbNavContent>
+      <app-client-files></app-client-files>
+    </ng-template>
+  </ng-container>
+</nav>
+
+<div [ngbNavOutlet]="nav" class="mt-2"></div>

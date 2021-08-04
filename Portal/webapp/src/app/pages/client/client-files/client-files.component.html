@@ -1,0 +1,23 @@
+<div style="padding: 20px 0px;">
+    File upload : <input class="form-control" type="file" (change)="onChange($event)">
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Client</th>
+            <th scope="col">Date Created</th>
+            <th scope="col">#</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let file of files">
+            <td>{{file.name}}</td>
+            <td>{{file.clientGlobalId}}</td>
+            <td>{{file.createdDate}}</td>
+            <td><button (click)="getFile(file)">
+                    <fa-icon [icon]="faFileDownload"></fa-icon>
+                </button></td>
+        </tr>
+    </tbody>
+</table>
